@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.raas.programquiz.Alfalaq"
+    android:background="@drawable/a">
+
+    <TextView
+        android:id="@+id/openِ"
+        android:padding="8dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="بِسْمِ اللَّهِ الرَّحْمَـٰنِ الرَّحِيمِ"
+        android:textColor="#000000"/>
+    <TextView
+        android:id="@+id/mTextQuestion"
+        android:padding="8dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Question"
+        android:layout_below="@+id/openِ"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#000000"/>
+
+    <RadioGroup
+        android:id="@+id/optionGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mTextQuestion"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <RadioButton
+            android:id="@+id/optionA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/optionB"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="Option A"
+            android:layout_alignBottom="@+id/mTextQuestion"/>
+        <RadioButton
+            android:id="@+id/optionB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/optionC"
+            android:layout_alignBottom="@+id/optionA"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="Option B"
+            />
+        <RadioButton
+            android:id="@+id/optionC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/optionB"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="Option C" />
+        <RadioButton
+            android:id="@+id/optionD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Option D"
+            android:layout_alignBottom="@+id/optionC"
+            android:layout_above="@+id/mBtnSubmit"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            />
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/mBtnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="submit"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:id="@+id/score"
+        android:padding="8dp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_marginTop="33dp"
+        android:layout_marginRight="140dp"
+        android:layout_marginEnd="140dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_below="@+id/optionGroup"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:id="@+id/score1"
+        android:padding="8dp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score:"
+        android:layout_alignBaseline="@+id/score"
+        android:layout_alignBottom="@+id/score"
+        android:layout_toLeftOf="@+id/score"
+        android:layout_toStartOf="@+id/score"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+
+</RelativeLayout>
